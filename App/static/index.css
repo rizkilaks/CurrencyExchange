@@ -1,0 +1,69 @@
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-image: url("images/pawel-czerwinski-1A_dO4TFKgM-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.navbar-app {
+  color: #a34da4;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card {
+  margin: auto;
+  padding: 24px;
+  width: 60%;
+  border: 2px solid #a34da4;
+  padding: 5%;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 0.25fr 1fr;
+  gap: 18px;
+}
+
+#primary-amount {
+  width: 100%;
+}
+
+.container {
+  padding: 0px;
+}
+
+.rate {
+  text-align: center;
+  size: 16px;
+}
+
+#swap {
+  background-color: #fff;
+  color: #a34da4;
+  border-color: #a34da4;
+  transition: background-color 0.3s ease;
+}
+
+#swap:hover {
+  background-color: #a34da4;
+  color: #fff;
+}
+
+.col-lg-12 {
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
