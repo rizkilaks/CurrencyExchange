@@ -6,6 +6,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
+  font-family: "Inter", sans-serif;
 }
 
 .navbar-app {
@@ -14,7 +15,8 @@ body {
 
 .title {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 5%;
+  margin-bottom: 3%;
 }
 
 .card {
@@ -29,6 +31,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr) 0.25fr 1fr;
   gap: 18px;
+  padding: 16px 0px;
 }
 
 #primary-amount {
@@ -39,9 +42,20 @@ body {
   padding: 0px;
 }
 
+.rate-notes {
+  font-size: 12px;
+  color: gray;
+  text-align: right;
+}
+
 .rate {
+  font-size: 30px;
   text-align: center;
-  size: 16px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #a34da4;
 }
 
 #swap {
@@ -66,4 +80,19 @@ body {
   bottom: 0;
   text-align: center;
   width: 100%;
+}
+
+/* Media query for screens with a maximum width of 768 pixels (typical for mobile devices) */
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 80%; /* Adjust card width for smaller screens */
+  }
+
+  .card-body {
+    grid-template-columns: 1fr; /* Adjust column layout for smaller screens */
+  }
+
+  .navbar {
+    display: none;
+  }
 }
