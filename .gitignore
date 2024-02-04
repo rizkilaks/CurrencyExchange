@@ -175,9 +175,9 @@ cython_debug/
 # Ignore node_modules directory for JavaScript
 node_modules/
 
-# Ignore compiled JavaScript files
-*.js
-*.js.map
+# # Ignore compiled JavaScript files
+# *.js
+# *.js.map
 
 # Ignore the output directory for JavaScript bundlers (e.g., webpack, Parcel)
 dist/
